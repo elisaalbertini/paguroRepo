@@ -23,6 +23,8 @@ jobs:
             with:
                  node-version: '>=20.10.0'
           - name: Release
+            env: 
+              GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             run: |
               npm install
               npx semantic-release
