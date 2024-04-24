@@ -12,7 +12,6 @@ on:
             - 'LICENSE'
 jobs:
     release:
-        if: github.ref == 'refs/heads/main'
         runs-on: ubuntu-latest
         concurrency:
           group: release
