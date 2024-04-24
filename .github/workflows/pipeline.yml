@@ -23,7 +23,7 @@ jobs:
             env:
               GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             run: |
-              npm update
+              npm install
               npx semantic-release
             id: ver
         outputs:
