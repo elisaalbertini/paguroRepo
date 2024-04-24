@@ -9,6 +9,10 @@
   "devDependencies": {
     "semantic-release-preconfigured-conventional-commits": "latest"
   },
+  "engines" : { 
+    "npm" : ">=10.0.0",
+    "node" : ">=20.0.0"
+  }
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
