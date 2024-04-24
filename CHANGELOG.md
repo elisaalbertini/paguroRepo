@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/elisaalbertini/paguroRepo/compare/1.0.0...1.1.0) (2024-04-24)
+
+
+### Features
+
+* ciao ([5939e06](https://github.com/elisaalbertini/paguroRepo/commit/5939e061f21078158f94942270f496349da0c318))
+
 ## 1.0.0 (2024-04-24)
 
 
