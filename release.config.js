@@ -3,4 +3,5 @@ config.plugins.push(
     "@semantic-release/github",
     "@semantic-release/git",
 )
+config.branches = ['main']
 module.exports = config
