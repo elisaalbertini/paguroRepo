@@ -1,0 +1,30 @@
+
+name: Main project workflow
+
+on: 
+    push:
+        branches:
+            - main
+            - develop
+        paths-ignore:
+            - 'README.md'
+            - 'CHANGELOG.md'
+            - 'LICENSE'
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        concurrency:
+          group: release
+          cancel-in-progress: false
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v3
+          - name: Release
+            env:
+              GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+            run: |
+              npm install
+              npx semantic-release
+            id: ver
+        outputs:
+          newVersion: ${{ steps.ver.outputs.nextVer }}
