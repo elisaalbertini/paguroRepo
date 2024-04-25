@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/elisaalbertini/paguroRepo/compare/1.1.1...1.1.2) (2024-04-25)
+
+
+### Bug Fixes
+
+* file di testo ([69f6c9b](https://github.com/elisaalbertini/paguroRepo/commit/69f6c9b5fb63b606384bedba5bb3baee69adf493))
+
 ## [1.1.1](https://github.com/elisaalbertini/paguroRepo/compare/1.1.0...1.1.1) (2024-04-25)
 
 
