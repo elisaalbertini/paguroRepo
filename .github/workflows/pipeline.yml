@@ -11,9 +11,6 @@ on:
             - 'LICENSE'
 jobs:
     release:
-        #if: github.ref == 'refs/heads/main'
-        #permissions:
-          #contents: write
         runs-on: ubuntu-latest
         concurrency:
           group: release
