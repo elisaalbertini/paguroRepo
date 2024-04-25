@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/elisaalbertini/paguroRepo/compare/1.1.0...1.1.1) (2024-04-25)
+
+
+### Bug Fixes
+
+* update pipeline.yml ([cc0974d](https://github.com/elisaalbertini/paguroRepo/commit/cc0974da056893989e4d508e82167fd2eef1970f))
+
 ## [1.1.0](https://github.com/elisaalbertini/paguroRepo/compare/1.0.0...1.1.0) (2024-04-24)
 
 
