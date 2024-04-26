@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/elisaalbertini/paguroRepo/compare/1.1.2...1.1.3) (2024-04-26)
+
+
+### Documentation
+
+* fixed title ([4d37b60](https://github.com/elisaalbertini/paguroRepo/commit/4d37b60775bc87723da1f04ca2740ffb9f4052b4))
+
 ## [1.1.2](https://github.com/elisaalbertini/paguroRepo/compare/1.1.1...1.1.2) (2024-04-25)
 
 
