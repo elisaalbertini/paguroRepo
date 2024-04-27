@@ -10,10 +10,10 @@ on:
             - 'CHANGELOG.md'
             - 'LICENSE'
 jobs:
-    #test:
-        #runs-on: ubuntu-latest
-        #steps:
-            #- uses: ./gradlew test
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: ./gradlew test
     release:
         runs-on: ubuntu-latest
         concurrency:
