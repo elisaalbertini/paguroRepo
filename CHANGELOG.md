@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/elisaalbertini/paguroRepo/compare/1.1.4...1.2.0) (2024-04-27)
+
+
+### Features
+
+* release di prova ([d02206a](https://github.com/elisaalbertini/paguroRepo/commit/d02206a750e2195317be77fd9af8feb89d0ffae8))
+
 ## [1.1.4](https://github.com/elisaalbertini/paguroRepo/compare/1.1.3...1.1.4) (2024-04-27)
 
 
