@@ -22,7 +22,7 @@ jobs:
               with:
                   distribution: "temurin"
                   java-version: ${{ matrix.java-version }}
-            - run: ./gradlew test
+            - uses: gradlew test
     release:
         needs: test
         runs-on: ubuntu-latest
