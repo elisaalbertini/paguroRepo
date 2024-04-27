@@ -1,5 +1,7 @@
 rootProject.name = "paguroRepo"
-include("paguroRepo")
+
+include(":PaguroElefante")
+
 plugins {
     id("org.danilopianini.gradle-pre-commit-git-hooks") version "1.0.23"
 }
@@ -10,4 +12,3 @@ gitHooks {
     }
     createHooks(true)
 }
-include("PaguroElefante")
