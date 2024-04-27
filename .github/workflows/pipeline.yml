@@ -13,15 +13,18 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout
+              uses: actions/checkout@v4
             - uses: ./gradlew test
     release:
-        runs-on: ubuntu-latest
+        needs: test
+        #runs-on: ubuntu-latest
         concurrency:
           group: release
           cancel-in-progress: false
         steps:
-          - name: Checkout
-            uses: actions/checkout@v4
+          #- name: Checkout
+           # uses: actions/checkout@v4
           - uses: actions/setup-node@v4
             with:
                  node-version: '>=20.10.0'
