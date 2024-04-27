@@ -22,8 +22,8 @@ jobs:
               with:
                   distribution: "temurin"
                   java-version: ${{ matrix.java-version }}
-            - run: ./gradlew build
-            - run: ./gradlew test
+            - run: chmod +x ./gradlew build
+            - run: chmod +x ./gradlew test
     release:
         needs: test
         runs-on: ubuntu-latest
