@@ -18,7 +18,7 @@ jobs:
             - uses: ./gradlew test
     release:
         needs: test
-        #runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
         concurrency:
           group: release
           cancel-in-progress: false
