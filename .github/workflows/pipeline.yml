@@ -11,11 +11,16 @@ on:
             - 'LICENSE'
 jobs:
     test:
+        strategy:
+          matrix:
+            java-version: [ 11, 16, 17, 18 ]
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
               uses: actions/checkout@v4
             - uses: actions/setup-java@v1
+              with:
+                  java-version: ${{ matrix.java-version }}
             - uses: ./gradlew test
     release:
         needs: test
