@@ -6,4 +6,6 @@ public class Paguro {
         return "Ciao Paguro";
     }
     public String complimentaIlPaguro() {return "Che bel Paguro!";}
+
+    public String insultaIlPaguro() {return "Che brutto Paguro!";}
 }
