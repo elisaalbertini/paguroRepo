@@ -1,5 +1,5 @@
 
-name: Main project workflow
+name: Release project workflow
 
 on:
   #workflow_dispatch:

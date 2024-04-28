@@ -1,18 +1,17 @@
 name: Pull request workflow
 
 on:
-  #workflow_dispatch:
-    workflow_run:
-      workflows: [ Test workflow, Release project workflow ]
-      types: [ completed ]
-  #pull_request:
-    #branches:
-      #- master
-      #- develop
-    #paths-ignore:
-     # - 'README.md'
-     # - 'CHANGELOG.md'
-     # - 'LICENSE'
+  workflow_run:
+    workflows: [ Release project workflow ]
+    types: [ completed ]
+  pull_request:
+    branches:
+      - master
+      - develop
+    paths-ignore:
+      - 'README.md'
+      - 'CHANGELOG.md'
+      - 'LICENSE'
 jobs:
   pull-request:
     strategy:
