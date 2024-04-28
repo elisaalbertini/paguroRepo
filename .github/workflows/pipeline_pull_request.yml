@@ -9,6 +9,10 @@ on:
     branches:
       - master
       - develop
+    paths-ignore:
+      - 'README.md'
+      - 'CHANGELOG.md'
+      - 'LICENSE'
 jobs:
   pull-request:
     strategy:
