@@ -8,4 +8,5 @@ public class Paguro {
     public String complimentaIlPaguro() {return "Che bel Paguro!";}
 
     public String insultaIlPaguro() {return "Che brutto Paguro!";}
+    public String giocaConIlPaguro() {return "Giochiamo Paguro!";}
 }
