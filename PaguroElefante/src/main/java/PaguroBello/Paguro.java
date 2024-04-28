@@ -5,4 +5,5 @@ public class Paguro {
     public String salutaIlPaguro(){
         return "Ciao Paguro";
     }
+    public String complimentaIlPaguro() {return "Che bel Paguro!";}
 }
