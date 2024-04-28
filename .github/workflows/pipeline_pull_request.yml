@@ -21,4 +21,4 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: .github/workflows/pipeline_test.yml
+      - uses: ./.github/workflows/pipeline_test.yml
