@@ -1,9 +1,9 @@
 name: Pull request workflow
 
 on:
-  workflow_run:
-    workflows: [ Main project workflow ]
-    types: [ completed ]
+  #workflow_run:
+   # workflows: [ Main project workflow ]
+    #types: [ completed ]
   pull_request:
     branches:
       - master
