@@ -2,7 +2,7 @@ name: Pull request workflow
 
 on:
   workflow_run:
-    workflows: [ Release project workflow ]
+    workflows: [ Main project workflow ]
     types: [ completed ]
   pull_request:
     branches:
