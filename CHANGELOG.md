@@ -1,3 +1,19 @@
+## [1.4.0](https://github.com/elisaalbertini/paguroRepo/compare/1.3.0...1.4.0) (2024-04-28)
+
+
+### Features
+
+* new comment ([b9faa65](https://github.com/elisaalbertini/paguroRepo/commit/b9faa65e203378d05a0056da7182ee2dbeba1e6d))
+* new comment ([15712e5](https://github.com/elisaalbertini/paguroRepo/commit/15712e56125a6312ea2994f998e5fd9812d31ca4))
+* new method in paguro ([d790388](https://github.com/elisaalbertini/paguroRepo/commit/d790388744921d27e5a47abb954c353bc0fa3feb))
+* new method in paguro ([320c2e9](https://github.com/elisaalbertini/paguroRepo/commit/320c2e90b45cf7866a51f14824f3db0b3d501762))
+
+
+### Tests
+
+* new test for the new method in paguro ([46d5f93](https://github.com/elisaalbertini/paguroRepo/commit/46d5f93f34feb94561a5e39ce49f51e48f0e1a9e))
+* new test for the new method in paguro ([50be225](https://github.com/elisaalbertini/paguroRepo/commit/50be2254c25471cc1d4bc4523917147c3d5a2748))
+
 ## [1.3.0](https://github.com/elisaalbertini/paguroRepo/compare/1.2.0...1.3.0) (2024-04-28)
 
 
