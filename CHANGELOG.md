@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/elisaalbertini/paguroRepo/compare/1.5.0...1.5.1) (2024-04-28)
+
+
+### Bug Fixes
+
+* fix jobs ([af483eb](https://github.com/elisaalbertini/paguroRepo/commit/af483ebb9874a0643d477001514eb457d9b9d246))
+
 ## [1.5.0](https://github.com/elisaalbertini/paguroRepo/compare/1.4.0...1.5.0) (2024-04-28)
 
 
