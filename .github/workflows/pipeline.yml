@@ -1,32 +1,20 @@
 
 name: Main project workflow
 
-on: 
+on:
+  workflow_dispatch:
+    workflow_run:
+      workflows: [ Test workflow ]
+      types: [ completed ]
     push:
         branches:
             - main
-            - develop
         paths-ignore:
             - 'README.md'
             - 'CHANGELOG.md'
             - 'LICENSE'
 jobs:
-    test:
-        strategy:
-          matrix:
-            java-version: [ 18 ]
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v4
-            - uses: actions/setup-java@v4
-              with:
-                  distribution: "temurin"
-                  java-version: ${{ matrix.java-version }}
-            - run: chmod +x ./gradlew
-            - run: ./gradlew test
     release:
-        needs: test
         runs-on: ubuntu-latest
         concurrency:
           group: release
