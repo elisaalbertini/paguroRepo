@@ -2,16 +2,17 @@
 name: Main project workflow
 
 on:
+  workflow_dispatch:
     workflow_run:
       workflows: [ Test workflow ]
       types: [ completed ]
-    push:
-        branches:
-            - main
-        paths-ignore:
-            - 'README.md'
-            - 'CHANGELOG.md'
-            - 'LICENSE'
+    #push:
+     #   branches:
+      #      - main
+       # paths-ignore:
+        #    - 'README.md'
+         #   - 'CHANGELOG.md'
+          #  - 'LICENSE'
 jobs:
     release:
         runs-on: ubuntu-latest
