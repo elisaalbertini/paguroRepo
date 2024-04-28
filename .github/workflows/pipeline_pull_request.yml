@@ -1,7 +1,9 @@
+name: Pull request workflow
+
 on:
   workflow_dispatch:
     workflow_run:
-      workflows: [ Test workflow ]
+      workflows: [ Test workflow, Release project workflow ]
       types: [ completed ]
   pull_request:
     branches:
