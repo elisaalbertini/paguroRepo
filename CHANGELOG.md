@@ -1,3 +1,20 @@
+## [1.3.0](https://github.com/elisaalbertini/paguroRepo/compare/1.2.0...1.3.0) (2024-04-28)
+
+
+### Features
+
+* new method in Paguro class ([ff39903](https://github.com/elisaalbertini/paguroRepo/commit/ff39903b90e78400d14571b0a79a76bb791b27fc))
+
+
+### Tests
+
+* new test for the new method in Paguro ([1db9eef](https://github.com/elisaalbertini/paguroRepo/commit/1db9eef11b0f9286bd994df43b878bd9c1bee735))
+
+
+### Refactoring
+
+* fix pipeline ([1ebd887](https://github.com/elisaalbertini/paguroRepo/commit/1ebd887c754db0132ce49b2b4be906b490b8cbf6))
+
 ## [1.2.0](https://github.com/elisaalbertini/paguroRepo/compare/1.1.4...1.2.0) (2024-04-27)
 
 
