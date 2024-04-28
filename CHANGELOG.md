@@ -1,3 +1,20 @@
+## [1.5.0](https://github.com/elisaalbertini/paguroRepo/compare/1.4.0...1.5.0) (2024-04-28)
+
+
+### Features
+
+* added new pipeline ([9d429f4](https://github.com/elisaalbertini/paguroRepo/commit/9d429f42bd7b3a943a85b3a96513fc7fae8fc735))
+* new feat ([7b6272e](https://github.com/elisaalbertini/paguroRepo/commit/7b6272e514e60418d09603d663ccbeeea8bd1099))
+
+
+### Bug Fixes
+
+* fix jobs ([d57123c](https://github.com/elisaalbertini/paguroRepo/commit/d57123c8eb0e7356d18c74a1040fff468ea3902f))
+* fix pipeline ([586d1a7](https://github.com/elisaalbertini/paguroRepo/commit/586d1a77725ef6edc81ab17a7176e879568364eb))
+* fix pipeline ([7fa53d9](https://github.com/elisaalbertini/paguroRepo/commit/7fa53d94413ea9d5b627336b2deff8baa51a5d56))
+* fix pipeline ([6bb987a](https://github.com/elisaalbertini/paguroRepo/commit/6bb987a6664240601075358a99950adf05bc17ba))
+* fix pipeline ([58ff6e0](https://github.com/elisaalbertini/paguroRepo/commit/58ff6e060cd4fe7962c9e4dc6753c52d6ad5315b))
+
 ## [1.4.0](https://github.com/elisaalbertini/paguroRepo/compare/1.3.0...1.4.0) (2024-04-28)
 
 
