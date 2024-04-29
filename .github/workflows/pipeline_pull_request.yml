@@ -8,18 +8,21 @@ on:
       - develop
 jobs:
   test:
-    strategy:
-      matrix:
-        java-version: [ 11, 16, 17, 18]
-        os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with:
-          distribution: "temurin"
-          java-version: ${{ matrix.java-version }}
+    name: Test workflow
+    uses: ./.github/workflows/pipeline_test.yml
+  #test:
+    #strategy:
+     # matrix:
+      #  java-version: [ 11, 16, 17, 18]
+       # os: [ubuntu-latest]
+    #runs-on: ${{ matrix.os }}
+    #steps:
+     # - name: Checkout
+      #  uses: actions/checkout@v4
+      #- uses: actions/setup-java@v4
+       # with:
+        #  distribution: "temurin"
+         # java-version: ${{ matrix.java-version }}
 
-      - run: chmod +x ./gradlew
-      - run: ./gradlew test
+      #- run: chmod +x ./gradlew
+      #- run: ./gradlew test

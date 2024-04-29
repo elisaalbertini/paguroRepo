@@ -2,38 +2,19 @@
 name: Main project workflow
 
 on:
-  #workflow_dispatch:
   push:
     branches: [main]
-        #- main
-    #push:
-     #   branches:
-      #      - main
-       # paths-ignore:
-        #    - 'README.md'
-         #   - 'CHANGELOG.md'
-          #  - 'LICENSE'
 jobs:
-    #release:
-        #runs-on: ubuntu-latest
-        #concurrency:
-          #group: release
-          #cancel-in-progress: false
-        #steps:
-          #- name: Checkout
-          #  uses: actions/checkout@v4
-          #- uses: actions/setup-node@v4
-           # with:
-            #     node-version: '>=20.10.0'
-          test:
-            name: Test workflow
-            uses: ./.github/workflows/pipeline_test.yml
-          #- name: Release
-           # env:
-            #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            #run: |
-             # npm install
-              #npx semantic-release
-            #id: ver
-        #outputs:
-         # newVersion: ${{ steps.ver.outputs.nextVer }}
+  test:
+    name: Test workflow
+    uses: ./.github/workflows/pipeline_test.yml
+  #TODO: release
+  #- name: Release
+   # env:
+    #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #run: |
+     # npm install
+      #npx semantic-release
+    #id: ver
+#outputs:
+ # newVersion: ${{ steps.ver.outputs.nextVer }}
