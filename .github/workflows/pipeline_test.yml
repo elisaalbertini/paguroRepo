@@ -3,13 +3,13 @@ name: Test workflow
 
 on:
   workflow_call:
-    branches:
-      - main
-      - develop
-    paths-ignore:
-      - 'README.md'
-      - 'CHANGELOG.md'
-      - 'LICENSE'
+    #branches:
+      #- main
+      #- develop
+    #paths-ignore:
+      #- 'README.md'
+      #- 'CHANGELOG.md'
+      #- 'LICENSE'
 jobs:
   test:
     strategy:
