@@ -1,0 +1,20 @@
+name: Codecov workflow
+
+on:
+  workflow_call:
+jobs:
+  codecov:
+    strategy:
+      matrix:
+        os: [ ubuntu-latest ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@master
+      - uses: codecov/codecov-action@v4
+        with:
+          fail_ci_if_error: true
+          files: ./coverage1.xml,./coverage2.xml
+          flags: unittests
+          name: codecov-umbrella
+          token: ${{ secrets.CODECOV_TOKEN }} # required
+          verbose: true

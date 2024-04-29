@@ -9,8 +9,13 @@ jobs:
     name: Test workflow
     uses: ./.github/workflows/pipeline_test.yml
 
-  release:
+  codecov:
     needs: test
+    name: Codecov workflow
+    uses: ./.github/workflows/pipeline_codecov.yml
+
+  release:
+    needs: codecov
     name: Release workflow
     uses: ./.github/workflows/pipeline_release.yml
   #TODO: release
