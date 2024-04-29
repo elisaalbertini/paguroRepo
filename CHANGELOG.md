@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/elisaalbertini/paguroRepo/compare/1.6.1...1.6.2) (2024-04-29)
+
+
+### Bug Fixes
+
+* paguro file ([68e2c49](https://github.com/elisaalbertini/paguroRepo/commit/68e2c49ae6aba6356d8ea3b60839b0073f639578))
+
 ## [1.6.1](https://github.com/elisaalbertini/paguroRepo/compare/1.6.0...1.6.1) (2024-04-29)
 
 
