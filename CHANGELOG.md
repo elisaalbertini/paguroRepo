@@ -1,3 +1,46 @@
+## [1.6.1](https://github.com/elisaalbertini/paguroRepo/compare/1.6.0...1.6.1) (2024-04-29)
+
+
+### Bug Fixes
+
+* aiuto ([55ae67e](https://github.com/elisaalbertini/paguroRepo/commit/55ae67e734908c2ddf9ab44f45c3e210dfa6d081))
+* ciao ([09c5f94](https://github.com/elisaalbertini/paguroRepo/commit/09c5f9469a93ec584316f2f3396a8fbec2aac23a))
+
+
+### Tests
+
+* prova ([6d49cdf](https://github.com/elisaalbertini/paguroRepo/commit/6d49cdf7338744c29b7b031d765608f361e3e78c))
+
+
+### Refactoring
+
+* refactoring ([47e5166](https://github.com/elisaalbertini/paguroRepo/commit/47e5166b0310c7579a64e2247e8f09837d9b6102))
+* refactoring ([ee3700f](https://github.com/elisaalbertini/paguroRepo/commit/ee3700f2c48466c5c58c9c477071b97919b4ffbf))
+* refactoring ([d0c34cd](https://github.com/elisaalbertini/paguroRepo/commit/d0c34cd4cef0d550d09f585cddeff47888584475))
+* refactoring ([c00aa78](https://github.com/elisaalbertini/paguroRepo/commit/c00aa782313fcac40fd2589391235ca23e266fb9))
+* refactoring ([d6590ff](https://github.com/elisaalbertini/paguroRepo/commit/d6590ffdc46da3cbbbcceb1a79052a4a25deb65e))
+* refactoring ([8f191c9](https://github.com/elisaalbertini/paguroRepo/commit/8f191c95857c1010615e481f8bf1924e9afde4f1))
+* refactoring ([4ab5c1a](https://github.com/elisaalbertini/paguroRepo/commit/4ab5c1aabc56d600128a6a5383ef697766267ba0))
+* refactoring ([2a3c8f8](https://github.com/elisaalbertini/paguroRepo/commit/2a3c8f8a28e9e3bcdd6a38c0c12d3b84bd09fff2))
+* refactoring ([34206a9](https://github.com/elisaalbertini/paguroRepo/commit/34206a92e976fd3d304ccc711d0f6409c539bb98))
+* refactoring ([c9996ab](https://github.com/elisaalbertini/paguroRepo/commit/c9996ab59cb3775f7df0c0bde5b6f0239916aa40))
+* refactoring ([153bcdc](https://github.com/elisaalbertini/paguroRepo/commit/153bcdc7a804169781b948f735862292b4244c12))
+* refactoring ([88cbaff](https://github.com/elisaalbertini/paguroRepo/commit/88cbafff2a03db5d385c4d43f54c86bf438664de))
+* refactoring ([3d0d44a](https://github.com/elisaalbertini/paguroRepo/commit/3d0d44a1170c8ae06981caa9094746bf2b285e5e))
+* refactoring ([5a7293f](https://github.com/elisaalbertini/paguroRepo/commit/5a7293f2eec58cb6aeaadeab1b2da24c1ec0425f))
+* refactoring ([5bbc5b5](https://github.com/elisaalbertini/paguroRepo/commit/5bbc5b51bb9955d5c906935aaf55fb3871fc748c))
+* refactoring ([cf2f875](https://github.com/elisaalbertini/paguroRepo/commit/cf2f87587b0446831bee627cba69eb86a671773c))
+* refactoring ([ecc6e9c](https://github.com/elisaalbertini/paguroRepo/commit/ecc6e9c29003f7526bb9a2c609c301f46d1bcc29))
+* refactoring ([7ba4626](https://github.com/elisaalbertini/paguroRepo/commit/7ba4626f1f680ee8c644ca3a2ce15001bbb4f495))
+* refactoring ([27e9050](https://github.com/elisaalbertini/paguroRepo/commit/27e9050e4b8390650355d625b35d03d34b1d21bc))
+* refactoring ([00e8b13](https://github.com/elisaalbertini/paguroRepo/commit/00e8b13912484b0f1aa83da6c40b1a42db47815f))
+* refactoring ([54d4ccc](https://github.com/elisaalbertini/paguroRepo/commit/54d4ccce46818387330cbcb15a98b7ea5d2c0819))
+* refactoring ([2efc4f7](https://github.com/elisaalbertini/paguroRepo/commit/2efc4f7d2e92fa8298b226149b080b6e9291e2ba))
+* refactoring ([3160fa7](https://github.com/elisaalbertini/paguroRepo/commit/3160fa7556ddd206c7fcb288e522942b0e7c1f1d))
+* refactoring ([4314c3d](https://github.com/elisaalbertini/paguroRepo/commit/4314c3d1d383a8e022a8610f39bb2a082629d0db))
+* refactoring ([e74ab7d](https://github.com/elisaalbertini/paguroRepo/commit/e74ab7da09905e668b6faa3693f7b52eec96ebd7))
+* refactoring ([37fa223](https://github.com/elisaalbertini/paguroRepo/commit/37fa22381f26dca6abf316463f8953b11000bb2c))
+
 ## [1.6.0](https://github.com/elisaalbertini/paguroRepo/compare/1.5.1...1.6.0) (2024-04-29)
 
 
