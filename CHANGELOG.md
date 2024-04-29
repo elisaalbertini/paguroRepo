@@ -1,3 +1,11 @@
+## [1.6.3](https://github.com/elisaalbertini/paguroRepo/compare/1.6.2...1.6.3) (2024-04-29)
+
+
+### Bug Fixes
+
+* aiutatemi per favore ([aef45e8](https://github.com/elisaalbertini/paguroRepo/commit/aef45e832d4ff2246075e82bcd4c075196df9d33))
+* aiutooooo ([6453261](https://github.com/elisaalbertini/paguroRepo/commit/6453261c54a9de07d0cb70f4272be90500a4d557))
+
 ## [1.6.2](https://github.com/elisaalbertini/paguroRepo/compare/1.6.1...1.6.2) (2024-04-29)
 
 
