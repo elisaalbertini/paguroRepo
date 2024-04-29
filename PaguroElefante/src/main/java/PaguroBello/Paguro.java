@@ -1,6 +1,6 @@
 package PaguroBello;
 
-public class Paguro {
+public final class Paguro {
     //funzione bellissima!
     public String salutaIlPaguro(){
         return "Ciao Paguro";
