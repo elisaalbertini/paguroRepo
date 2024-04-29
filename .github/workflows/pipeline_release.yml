@@ -9,6 +9,9 @@ jobs:
         os: [ ubuntu-latest ]
     runs-on: ${{ matrix.os }}
     steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '>=20.10.0'
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
