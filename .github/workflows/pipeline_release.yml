@@ -1,0 +1,15 @@
+name: Release workflow
+
+on:
+  workflow_call:
+jobs:
+  release:
+    - name: Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        npm install
+        npx semantic-release
+      id: ver
+  outputs:
+   newVersion: ${{ steps.ver.outputs.nextVer }}
