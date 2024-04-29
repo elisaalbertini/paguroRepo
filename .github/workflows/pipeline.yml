@@ -26,8 +26,8 @@ jobs:
            # with:
             #     node-version: '>=20.10.0'
           test:
-            #- name: test
-             - uses: ./.github/workflows/pipeline_test.yml
+            name: Test workflow
+            uses: ./.github/workflows/pipeline_test.yml
           #- name: Release
            # env:
             #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
