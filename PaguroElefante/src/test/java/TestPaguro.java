@@ -12,11 +12,11 @@ public class TestPaguro {
     }
     @Test
     public void TestComplimentaIlPaguro(){
-        assertEquals("Che bell Paguro!", paguro.complimentaIlPaguro());
+        assertEquals("Che bel Paguro!", paguro.complimentaIlPaguro());
     }
     @Test
     public void TestInsultaIlPaguro(){
-        assertEquals("Che brutto Paguro!", paguro.insultaIlPaguro());
+        assertEquals("Che bruttoh Paguro!", paguro.insultaIlPaguro());
     }
 
     @Test
