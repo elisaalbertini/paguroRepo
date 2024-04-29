@@ -2,6 +2,7 @@ Vogliamo fare un commit di prova!
 Riproviamo a fare il commit di prova! 
 Riproviamo a fare un commit perchè ora ci sono gli hooks!
 Mamma Aiuto x9000
+verificami
 ci sono anch'io
 Grande demone celeste
 Calcifer
