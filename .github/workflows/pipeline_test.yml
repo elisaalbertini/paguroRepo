@@ -2,7 +2,7 @@
 name: Test workflow
 
 on:
-  push:
+  workflow_call:
     branches:
       - main
       - develop
