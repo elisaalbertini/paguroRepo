@@ -16,5 +16,5 @@ jobs:
           npm install
           npx semantic-release
         id: ver
-  outputs:
-   newVersion: ${{ steps.ver.outputs.nextVer }}
+    outputs:
+      newVersion: ${{ steps.ver.outputs.nextVer }}
