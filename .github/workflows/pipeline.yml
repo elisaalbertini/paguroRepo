@@ -10,6 +10,7 @@ jobs:
     uses: ./.github/workflows/pipeline_test.yml
 
   release:
+    needs: test
     name: Release workflow
     uses: ./.github/workflows/pipeline_release.yml
   #TODO: release
