@@ -8,6 +8,7 @@ jobs:
   test:
     name: Test workflow
     uses: ./.github/workflows/pipeline_test.yml
+
   release:
     name: Release workflow
     uses: ./.github/workflows/pipeline_release.yml
