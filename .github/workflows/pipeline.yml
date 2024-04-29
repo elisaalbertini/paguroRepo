@@ -14,7 +14,7 @@ on:
          #   - 'CHANGELOG.md'
           #  - 'LICENSE'
 jobs:
-    release:
+    #release:
         #runs-on: ubuntu-latest
         #concurrency:
           #group: release
