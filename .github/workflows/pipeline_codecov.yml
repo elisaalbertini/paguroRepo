@@ -15,7 +15,5 @@ jobs:
           CODECOV_TOKEN: 4e37010f-f78d-4e80-80ee-6a558d587c46 # required
         with:
           fail_ci_if_error: true
-          files: ./coverage.yml
-          flags: unittests
           token: 4e37010f-f78d-4e80-80ee-6a558d587c46 # required
           verbose: true
