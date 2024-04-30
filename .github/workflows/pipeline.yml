@@ -12,7 +12,7 @@ jobs:
   codecov:
     needs: test
     name: Codecov workflow
-    uses: ./.github/workflows/codecov.yml
+    uses: ./.github/workflows/pipeline_codecov.yml
 
   release:
     needs: codecov
