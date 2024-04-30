@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestPaguro" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-04-30T14:55:14" hostname="LAPTOP-F53O1U9R" time="0.07">
+  <properties/>
+  <testcase name="TestGiocaConIlPaguro()" classname="TestPaguro" time="0.06"/>
+  <testcase name="TestComplimentaIlPaguro()" classname="TestPaguro" time="0.001"/>
+  <testcase name="TestSalutaIlPaguro()" classname="TestPaguro" time="0.001"/>
+  <testcase name="TestInsultaIlPaguro()" classname="TestPaguro" time="0.001"/>
+  <testcase name="TestGiocaConIlPaguro2()" classname="TestPaguro" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
