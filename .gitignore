@@ -135,6 +135,3 @@ dist
 #Gradle
 .gradle
 build/
-
-#VSC
-bin/
