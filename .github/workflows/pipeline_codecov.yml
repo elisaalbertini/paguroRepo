@@ -9,12 +9,7 @@ jobs:
         os: [ ubuntu-latest ]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: codecov/codecov-action@v4
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
         with:
-          #fail_ci_if_error: true
-          #files: ./coverage1.xml,./coverage2.xml
-          #flags: unittests
-          #name: codecov-umbrella
-          token: ${{ secrets.CODECOV_TOKEN }} # required
-          #verbose: true
+            token: ${{ secrets.CODECOV_TOKEN }}
