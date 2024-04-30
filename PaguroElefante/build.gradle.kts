@@ -21,7 +21,7 @@ tasks.jacocoTestReport {
         xml.required.set(false)
         csv.required.set(false)
         html.required.set(true)
-        html.outputLocation.set(File("/repost"))
+        html.outputLocation.set(File("/report"))
     }
 }
 
