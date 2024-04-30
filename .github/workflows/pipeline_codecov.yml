@@ -9,7 +9,7 @@ jobs:
         os: [ ubuntu-latest ]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
       - uses: codecov/codecov-action@v4
         with:
           fail_ci_if_error: true
