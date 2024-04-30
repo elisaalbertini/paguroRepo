@@ -11,10 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: codecov/codecov-action@v4
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }} # required
         with:
           fail_ci_if_error: true
           files: ./coverage.yml
           flags: unittests
-          name: codecov-umbrella
           token: ${{ secrets.CODECOV_TOKEN }} # required
           verbose: true
