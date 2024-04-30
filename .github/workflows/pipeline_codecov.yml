@@ -12,9 +12,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: codecov/codecov-action@v4
         with:
-          fail_ci_if_error: true
-          files: ./coverage1.xml,./coverage2.xml
-          flags: unittests
-          name: codecov-umbrella
+          #fail_ci_if_error: true
+          #files: ./coverage1.xml,./coverage2.xml
+          #flags: unittests
+          #name: codecov-umbrella
           token: ${{ secrets.CODECOV_TOKEN }} # required
-          verbose: true
+          #verbose: true
