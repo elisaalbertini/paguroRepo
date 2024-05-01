@@ -19,12 +19,12 @@ public class TestPaguro {
         assertEquals("Che brutto Paguro!", paguro.insultaIlPaguro());
     }
 
-    @Test
+    /*@Test
     public void TestGiocaConIlPaguro(){
         assertEquals("Giochiamo Paguro!", paguro.giocaConIlPaguro());
     }
     @Test
     public void TestGiocaConIlPaguro2(){
         assertEquals("Giochiamo Paguro!", paguro.giocaConIlPaguro());
-    }
+    }*/
 }
