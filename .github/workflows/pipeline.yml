@@ -6,8 +6,8 @@ on:
     branches: [main]
 jobs:
   test:
-    name: Jacoco workflow
-    uses: ./.github/workflows/pipeline_jacoco.yml
+    name: Test workflow
+    uses: ./.github/workflows/pipeline_test.yml
 
   #codecov:
    # needs: test
