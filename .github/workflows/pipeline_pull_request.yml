@@ -7,10 +7,7 @@ on:
       - main
       - develop
 jobs:
-  #test:
-   # name: Test workflow
-    #uses: ./.github/workflows/pipeline_test.yml
-  test:
-    name: Jacoco workflow
+  jacoco:
+    name: Test and coverage
     uses: ./.github/workflows/pipeline_jacoco.yml
-
+  
