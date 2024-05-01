@@ -9,6 +9,8 @@ jobs:
         java-version: [ 11, 16, 17, 18]
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
+    permissions:
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
