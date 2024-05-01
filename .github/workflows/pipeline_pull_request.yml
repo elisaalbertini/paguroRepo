@@ -10,4 +10,4 @@ jobs:
   jacoco:
     name: Test and coverage
     uses: ./.github/workflows/pipeline_jacoco.yml
-  
+
