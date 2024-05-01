@@ -18,10 +18,10 @@ tasks.test {
 tasks.jacocoTestReport {
     dependsOn(tasks.test) // tests are required to run before generating the report
     reports {
-        xml.required.set(true)
+        xml.required.set(false)
         csv.required.set(true)
-        html.required.set(true)
-        //html.outputLocation.set(File("./report"))
+        html.required.set(false)
+        csv.outputLocation.set(File("./build/reports/jacoco/test/jacocoTestReport.csv"))
     }
 }
 
