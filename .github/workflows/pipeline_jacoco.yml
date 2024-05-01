@@ -20,7 +20,7 @@ jobs:
           java-version: ${{ matrix.java-version }}
       - run: chmod +x ./gradlew
       - run: ./gradlew jacocoTestReport
-      - name: Checkout
+      - name: Checkout2
           uses: actions/checkout@v4
       #- name: Publish Test Results
        # uses: EnricoMi/publish-unit-test-result-action@v2
