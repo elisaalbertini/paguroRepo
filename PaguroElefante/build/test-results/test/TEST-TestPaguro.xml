@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestPaguro" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-05-01T14:25:36" hostname="LAPTOP-F53O1U9R" time="0.079">
-  <properties/>
-  <testcase name="TestComplimentaIlPaguro()" classname="TestPaguro" time="0.073"/>
-  <testcase name="TestSalutaIlPaguro()" classname="TestPaguro" time="0.001"/>
-  <testcase name="TestInsultaIlPaguro()" classname="TestPaguro" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
