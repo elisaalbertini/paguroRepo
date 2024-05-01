@@ -16,7 +16,7 @@ public class TestPaguro {
     }
     @Test
     public void TestInsultaIlPaguro(){
-        assertEquals("Che brutto Paguro!", paguro.insultaIlPaguro());
+        assertEquals("Che brutto Paguro!!", paguro.insultaIlPaguro());
     }
 
     /*@Test
