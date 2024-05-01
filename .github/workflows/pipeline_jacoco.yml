@@ -1,4 +1,4 @@
-name: Jacoco workflow
+name: Test and coverage workflow
 
 on:
   workflow_call:
