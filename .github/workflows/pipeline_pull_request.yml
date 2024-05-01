@@ -4,6 +4,7 @@ name: Pull request workflow
 on:
   pull_request:
     branches:
+      - ele2
       - main
       - develop
 jobs:
