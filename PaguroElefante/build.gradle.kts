@@ -27,7 +27,7 @@ tasks.jacocoTestReport {
 
 jacoco {
     toolVersion = "0.8.11"
-    reportsDirectory.set(layout.buildDirectory.dir("jacoco"))
+    //reportsDirectory.set(layout.buildDirectory.dir("jacoco"))
 }
 
 dependencies {

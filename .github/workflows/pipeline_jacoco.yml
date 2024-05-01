@@ -20,6 +20,8 @@ jobs:
           java-version: ${{ matrix.java-version }}
       - run: chmod +x ./gradlew
       - run: ./gradlew jacocoTestReport
+      - name: Checkout
+          uses: actions/checkout@v4
       #- name: Publish Test Results
        # uses: EnricoMi/publish-unit-test-result-action@v2
        # with:
@@ -33,6 +35,4 @@ jobs:
         with:
           paths: |  
             ${{ github.workspace }}/**/build/reports/jacoco/**/*.xml,
-            ${{ github.workspace }}/**/build/reports/jacoco/prodNormalDebugCoverage/prodNormalDebugCoverage.xml,            
-            ${{ github.workspace }}/**/build/reports/jacoco/**/debugCoverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
