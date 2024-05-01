@@ -5,27 +5,15 @@ on:
   push:
     branches: [main]
 jobs:
-  test:
-    name: Test workflow
-    uses: ./.github/workflows/pipeline_test.yml
+  #test:
+   # name: Test workflow
+   # uses: ./.github/workflows/pipeline_test.yml
 
-  #codecov:
-   # needs: test
-   # name: Codecov workflow
-   # uses: ./.github/workflows/pipeline_codecov.yml
+  jacoco:
+      name: Jacoco workflow
+      uses: ./.github/workflows/pipeline_jacoco.yml
 
   release:
-    needs: test
-    #needs: codecov
+    needs: jacoco
     name: Release workflow
     uses: ./.github/workflows/pipeline_release.yml
-  #TODO: release
-  #- name: Release
-   # env:
-    #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #run: |
-     # npm install
-      #npx semantic-release
-    #id: ver
-#outputs:
- # newVersion: ${{ steps.ver.outputs.nextVer }}
