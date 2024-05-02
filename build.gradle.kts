@@ -1,12 +1,28 @@
 plugins {
     id("java")
+    id("org.sonarqube") version "3.5.0.2730"
 }
 
-group = "org.example"
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "elisaalbertini_paguroRepo")
+        property("sonar.organization", "elisaalbertini-pagurorepo")
+        property("sonar.host.url", "http://localhost:9000")
+    }
+}
+
+subprojects {
+    sonar {
+        properties {
+            property("sonar.sources", "src")
+        }
+    }
 }
 
 dependencies {
