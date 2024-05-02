@@ -8,9 +8,12 @@ jobs:
   #test:
    # name: Test workflow
    # uses: ./.github/workflows/pipeline_test.yml
+  build:
+      name: build
+      uses: ./.github/workflows/pipeline_build.yml
 
   jacoco:
-      name: Test and coverage
+      name: test and coverage
       uses: ./.github/workflows/pipeline_jacoco.yml
 
   release:

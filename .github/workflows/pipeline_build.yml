@@ -1,0 +1,19 @@
+name: Build workflow
+
+on:
+  workflow_call:
+jobs:
+  test:
+    strategy:
+      matrix:
+        java-version: [ 11, 16, 17, 18]
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: ${{ matrix.java-version }}
+      - run: ./gradlew build
