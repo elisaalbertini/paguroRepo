@@ -13,7 +13,7 @@ sonar {
     properties {
         property("sonar.projectKey", "elisaalbertini_paguroRepo")
         property("sonar.organization", "elisaalbertini-pagurorepo")
-        property("sonar.coverage.jacoco.xmlReportPaths", "./PaguroElefante/build/**/jacocoTestReport.xml")
+        property("sonar.coverage.jacoco.xmlReportPaths", "PaguroElefante/build/reports/jacoco/test/jacocoTestReport.xml")
         //property("sonar.web.context","http://localhost:9000")
         //property("sonar.host.url", "http://localhost:9000")
     }

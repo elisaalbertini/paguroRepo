@@ -11,6 +11,10 @@ on:
       - main
       - develop
 jobs:
+  jacoco:
+    name: test and coverage
+    uses: ./.github/workflows/pipeline_jacoco.yml
+
   sonarcloud:
     name: SonarCloud
     strategy:
