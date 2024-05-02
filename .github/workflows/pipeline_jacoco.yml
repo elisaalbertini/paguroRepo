@@ -26,6 +26,11 @@ jobs:
       - name: Run Test Coverage
         run: ./gradlew jacocoTestReport #sonar
 
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
       - name: Add coverage to PR
         uses: madrapps/jacoco-report@v1.6.1
         with:
@@ -41,10 +46,6 @@ jobs:
           generate-branches-badge: true
           jacoco-csv-file: ./PaguroElefante/build/**/jacocoTestReport.csv
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   #sonarcloud:
    # name: SonarCloud
     #strategy:
