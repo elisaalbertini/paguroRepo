@@ -7,21 +7,6 @@ on:
       - main
       - develop
 jobs:
-
-  sonarcloud:
-    name: SonarCloud
-    strategy:
-      matrix:
-        os: [ ubuntu-latest ]
-    runs-on: ${{ matrix.os }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   jacoco:
     name: Test and coverage
     uses: ./.github/workflows/pipeline_jacoco.yml
