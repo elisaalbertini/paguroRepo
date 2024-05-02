@@ -16,6 +16,7 @@ jobs:
     uses: ./.github/workflows/pipeline_jacoco.yml
 
   sonarcloud:
+    needs: jacoco
     name: SonarCloud
     strategy:
       matrix:
