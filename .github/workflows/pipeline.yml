@@ -3,7 +3,9 @@ name: Main project workflow
 
 on:
   push:
-    branches: [main, develop]
+    branches:
+      - main
+      - develop
 jobs:
   #test:
    # name: Test workflow
