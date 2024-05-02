@@ -13,7 +13,7 @@ sonar {
     properties {
         property("sonar.projectKey", "elisaalbertini_paguroRepo")
         property("sonar.organization", "elisaalbertini-pagurorepo")
-        property("sonar.host.url", "http://localhost:9000")
+        property("sonar.host.url", "https://sonarcloud.io/project/overview?id=elisaalbertini_paguroRepo")
     }
 }
 
