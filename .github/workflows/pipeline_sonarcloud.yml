@@ -28,8 +28,11 @@ jobs:
           fetch-depth: 0
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
+        with:
+          paths: |
+            ${{ github.workspace }}/**/build/reports/jacoco/**/*.xml
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          args: >
-           -Dsonar.coverage.jacoco.xmlReportPaths=./PaguroElefante/build/reports/jacoco/test/jacocoTestReport.xml
+        #with:
+         # args: >
+          # -Dsonar.coverage.jacoco.xmlReportPaths=./PaguroElefante/build/reports/jacoco/test/jacocoTestReport.xml
