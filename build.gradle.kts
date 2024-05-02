@@ -19,13 +19,13 @@ sonar {
     }
 }
 
-/*subprojects {
+subprojects {
     sonar {
         properties {
-            property("sonar.sources", "src")
+            property("sonar.sources", "PaguroElefante/src")
         }
     }
-}*/
+}
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
