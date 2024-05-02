@@ -32,4 +32,4 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-           -Dsonar.coverage.jacoco.xmlReportPaths=PaguroElefante/build/**/jacocoTestReport.xml
+           -Dsonar.coverage.jacoco.xmlReportPaths=PaguroElefante/build/reports/jacoco/test/jacocoTestReport.xml
