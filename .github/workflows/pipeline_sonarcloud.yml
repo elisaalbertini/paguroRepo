@@ -2,15 +2,14 @@
 name: Sonarcloud workflow
 
 on:
-  workflow_call:
-  #push:
-   # branches:
-    #  - main
-     # - develop
-  #pull_request:
-   # branches:
-    #  - main
-     # - develop
+  push:
+    branches:
+     - main
+     - develop
+  pull_request:
+    branches:
+     - main
+     - develop
 jobs:
   jacoco:
     name: test and coverage
@@ -30,4 +29,3 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
