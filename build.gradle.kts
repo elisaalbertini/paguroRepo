@@ -13,18 +13,19 @@ sonar {
     properties {
         property("sonar.projectKey", "elisaalbertini_paguroRepo")
         property("sonar.organization", "elisaalbertini-pagurorepo")
-        property("sonar.web.context","http://localhost:9000")
-        property("sonar.host.url", "http://localhost:9000")
+        property("sonar.coverage.jacoco.xmlReportPaths", "./PaguroElefante/build/**/jacocoTestReport.xml")
+        //property("sonar.web.context","http://localhost:9000")
+        //property("sonar.host.url", "http://localhost:9000")
     }
 }
 
-subprojects {
+/*subprojects {
     sonar {
         properties {
             property("sonar.sources", "src")
         }
     }
-}
+}*/
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
