@@ -10,7 +10,7 @@
     "semantic-release-preconfigured-conventional-commits": "latest"
   },
   "scripts": {
-    "test": "./*.test.ts",
+    "test": "jest --verbose ./*.test.ts",
     "v": "node -v"
   },
   "repository": {
