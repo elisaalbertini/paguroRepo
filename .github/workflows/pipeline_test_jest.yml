@@ -11,6 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
+    - run: cd ./paguro_web 
     - name: Install modules
       run: npm install
     - name: Run tests
