@@ -40,6 +40,16 @@ jobs:
       - name: Run Test Coverage
         run: ./gradlew jacocoTestReport #sonar
 
+      - name: Install modules
+        working-directory: paguro_web
+        run: npm install
+      - name: Run tests
+        working-directory: paguro_web
+        run: yarn test
+      - name: Coverage
+        working-directory: paguro_web
+        run: npx jest --coverage
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
