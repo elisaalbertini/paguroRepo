@@ -47,3 +47,4 @@ jobs:
         with:
          args: >
            -Dsonar.coverage.jacoco.xmlReportPaths=./PaguroElefante/build/reports/jacoco/test/jacocoTestReport.xml
+           -Dsonar.javascript.lcov.reportPaths=./paguro_web/clover.xml

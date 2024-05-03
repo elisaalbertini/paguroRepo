@@ -17,3 +17,6 @@ jobs:
     - name: Run tests
       working-directory: paguro_web
       run: yarn test
+    - name: Coverage
+      working-directory: paguro_web
+      run: npx jest --coverage
