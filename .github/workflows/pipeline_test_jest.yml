@@ -15,4 +15,5 @@ jobs:
       working-directory: paguro_web
       run: npm install
     - name: Run tests
+      working-directory: paguro_web
       run: yarn test
