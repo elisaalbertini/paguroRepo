@@ -1,4 +1,4 @@
-import * as testMain from "./main"
+import * as testMain from "../src/main"
 
 test('Saluta il paguro', () => {
   expect(testMain.salutaIlPaguro()).toBe("Ciao paguro!");
