@@ -12,6 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4 
     - name: Install modules
+      working-directory: paguro_web
       run: npm install
     - name: Run tests
       run: yarn test
