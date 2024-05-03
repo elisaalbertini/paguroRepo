@@ -9,10 +9,6 @@
   "devDependencies": {
     "semantic-release-preconfigured-conventional-commits": "latest"
   },
-  "scripts": {
-    "test": "jest --verbose ./*.test.ts",
-    "v": "node -v"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elisaalbertini/paguroRepo.git"
