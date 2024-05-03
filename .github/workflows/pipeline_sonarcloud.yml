@@ -54,7 +54,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-         args: >
-           -Dsonar.coverage.jacoco.xmlReportPaths=./PaguroElefante/build/reports/jacoco/test/jacocoTestReport.xml
-           -Dsonar.javascript.lcov.reportPaths=./paguro_web/coverage/lcov.info
+       # with:
+        # args: >
+         #  -Dsonar.coverage.jacoco.xmlReportPaths=./PaguroElefante/build/reports/jacoco/test/jacocoTestReport.xml
+          # -Dsonar.javascript.lcov.reportPaths=./paguro_web/coverage/lcov.info
