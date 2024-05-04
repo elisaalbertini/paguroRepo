@@ -1,7 +1,15 @@
 package PaguroBello;
 
+/**
+ * Classe bellissima
+ */
 public final class Paguro {
     //funzione bellissima!
+
+    /**
+     * Saluta il paguro
+     * @return saluto al paguro
+     */
     public String salutaIlPaguro(){
         return "Ciao Paguro";
     }

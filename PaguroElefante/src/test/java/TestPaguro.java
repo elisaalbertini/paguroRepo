@@ -6,6 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestPaguro {
     Paguro paguro = new Paguro();
+
+    /**
+     * Test incredibile
+     */
     @Test
     public void TestSalutaIlPaguro(){
         assertEquals("Ciao Paguro", paguro.salutaIlPaguro());
