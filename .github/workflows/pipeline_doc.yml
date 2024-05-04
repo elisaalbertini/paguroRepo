@@ -19,6 +19,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           javadoc-branch: main
           java-version: 17
-          target-folder: PaguroElefante # url will be https://<username>.github.io/<repo>/javadoc, This can be left as nothing to generate javadocs in the root folder.
+          target-folder:  # url will be https://<username>.github.io/<repo>/javadoc,
+          #This can be left as nothing to generate javadocs in the root folder.
           project: gradle
           subdirectories:  PaguroElefante #for subdirectories support, needs to be run with custom command
