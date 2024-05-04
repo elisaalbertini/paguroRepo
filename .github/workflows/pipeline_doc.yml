@@ -17,9 +17,8 @@ jobs:
         uses: MathieuSoysal/Javadoc-publisher.yml@v2.5.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          javadoc-branch: javadoc
+          javadoc-branch: main
           java-version: 17
-          folder: ./target
           target-folder: https://elisaalbertini.github.io/paguroRepo/javadoc # url will be https://<username>.github.io/<repo>/javadoc, This can be left as nothing to generate javadocs in the root folder.
           project: gradle
           subdirectories: PaguroElefante #for subdirectories support, needs to be run with custom command
