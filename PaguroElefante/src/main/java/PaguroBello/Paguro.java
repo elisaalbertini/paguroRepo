@@ -13,10 +13,25 @@ public final class Paguro {
     public String salutaIlPaguro(){
         return "Ciao Paguro";
     }
+
+    /**
+     * ciao
+     * @return
+     */
     public String complimentaIlPaguro() {
         return "Che bel Paguro!";}
     //insulta il paguro
+
+    /**
+     * Ciao
+     * @return
+     */
     public String insultaIlPaguro() {return "Che brutto Paguro!";}
+
+    /**
+     * Ciao
+     * @return
+     */
     //gioca con il paguro
     public String giocaConIlPaguro() {return "Giochiamo Paguro!";}
 }
