@@ -1,2 +1,0 @@
-# paguroRepo
-Repository di prova
