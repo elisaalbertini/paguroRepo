@@ -13,6 +13,7 @@ jobs:
       contents: write  # if you have a protection rule on your repository, you'll need to give write permission to the workflow.
     steps:
       - uses: actions/checkout@v4 #??
+      - run: javadoc PaguroElefante/src/main/java/PaguroBello
       #- run: chmod +x gradlew
       #- uses: ./gradlew build
       - name: Deploy JavaDoc 🚀
