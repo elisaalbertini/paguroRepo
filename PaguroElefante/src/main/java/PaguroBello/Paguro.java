@@ -16,7 +16,7 @@ public final class Paguro {
 
     /**
      * ciao
-     * @return
+     * @return ciao
      */
     public String complimentaIlPaguro() {
         return "Che bel Paguro!";}
@@ -24,13 +24,13 @@ public final class Paguro {
 
     /**
      * Ciao
-     * @return
+     * @return ciao
      */
     public String insultaIlPaguro() {return "Che brutto Paguro!";}
 
     /**
      * Ciao
-     * @return
+     * @return ciao
      */
     //gioca con il paguro
     public String giocaConIlPaguro() {return "Giochiamo Paguro!";}
