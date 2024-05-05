@@ -1,3 +1,3 @@
 Ciao!
 
-- [Javadoc](PaguroElefante/javadoc/allclasses-index.html)
+- [Javadoc](PaguroElefante/javadoc/overview-tree.html)
