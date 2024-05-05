@@ -1,9 +1,6 @@
 name: Typedoc workflow
 on:
-  push:
-    branch:
-      - main
-      - develop
+  workflow_call:
 permissions:
   contents: write
 jobs:
