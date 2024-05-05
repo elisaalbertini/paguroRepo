@@ -24,3 +24,7 @@ jobs:
           javadoc-source-folder: build/docs/javadoc
           project: gradle
           subdirectories:  PaguroElefante #for subdirectories support, needs to be run with custom command
+
+  typedoc:
+    name: typedoc
+    uses: ./.github/workflows/pipeline_doc_typescript.yml
