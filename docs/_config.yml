@@ -1,9 +1,10 @@
-title: "DSDMS"
+title: "Paguro repo"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 
 show_downloads: false
-exclude: ./docs/javadoc/PaguroElefante/javadoc/legal
+exclude: 
+  - ./javadoc/PaguroElefante/javadoc/legal
 
 mermaid:
   theme: "default"
