@@ -25,7 +25,7 @@ jobs:
           project: gradle
           subdirectories:  PaguroElefante #for subdirectories support, needs to be run with custom command
 
-  #typedoc:
-   # needs: publish
-    #name: typedoc
-    #uses: ./.github/workflows/pipeline_doc_typescript.yml
+  typedoc:
+    needs: publish
+    name: typedoc
+    uses: ./.github/workflows/pipeline_doc_typescript.yml
