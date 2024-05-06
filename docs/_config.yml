@@ -3,7 +3,7 @@ remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 
 show_downloads: false
-exclude: ./PaguroElefante/javadoc/legal
+exclude: ./**/legal
 
 mermaid:
   theme: "default"
