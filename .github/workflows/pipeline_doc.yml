@@ -12,18 +12,31 @@ jobs:
     #permissions:
      # contents: write  # if you have a protection rule on your repository, you'll need to give write permission to the workflow.
     steps:
-      #- uses: actions/checkout@v4 #??
-      - name: Deploy JavaDoc 🚀
-        uses: MathieuSoysal/Javadoc-publisher.yml@v2.5.0
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          javadoc-branch: javadoc
-          java-version: 17
-          target-folder: docs/javadoc # url will be https://<username>.github.io/<repo>/javadoc,
+      #- name: Deploy JavaDoc 🚀
+        #uses: MathieuSoysal/Javadoc-publisher.yml@v2.5.0
+        #with:
+         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         # javadoc-branch: javadoc
+         # java-version: 17
+         # target-folder: docs/javadoc # url will be https://<username>.github.io/<repo>/javadoc,
           #This can be left as nothing to generate javadocs in the root folder.
-          javadoc-source-folder: build/docs/javadoc
-          project: gradle
-          subdirectories:  PaguroElefante #for subdirectories support, needs to be run with custom command
+         # javadoc-source-folder: build/docs/javadoc
+         # project: gradle
+         # subdirectories:  PaguroElefante #for subdirectories support, needs to be run with custom command
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          chmod +x gradlew
+          ./gradlew dokkaHtmlMultiModule
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./build/dokka/htmlMultiModule # The folder the action should deploy.
+          branch: javadoc
+          target-folder: ./docs/dokka
 
   typedoc:
     needs: publish
