@@ -3,7 +3,6 @@ plugins {
     id("jacoco")
 }
 
-//group = "org.example"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -20,21 +19,14 @@ tasks.jacocoTestReport {
     reports {
         xml.required.set(true)
         csv.required.set(true)
-        //html.required.set(false)
-        //csv.outputLocation.set(File("./build/reports/jacoco/test/jacocoTestReport.csv"))
     }
 }
 
 jacoco {
     toolVersion = "0.8.11"
-    //reportsDirectory.set(layout.buildDirectory.dir("customJacocoReportDir"))
 }
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 }
-
-/*tasks.getByName<Test>("test") {
-    useJUnitPlatform()
-}*/

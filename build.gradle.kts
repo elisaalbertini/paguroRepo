@@ -1,9 +1,8 @@
 plugins {
     kotlin("jvm") version "1.8.21"
     id("org.jetbrains.dokka") version "1.9.20"
+    id("org.jlleitschuh.gradle.ktlint") version "12.1.0"
 }
-
-version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -20,5 +19,12 @@ tasks.getByName<Test>("test") {
 }
 
 subprojects {
+    apply(plugin = "org.jlleitschuh.gradle.ktlint")
     apply(plugin = "org.jetbrains.dokka")
+}
+
+ktlint {
+    filter {
+        include("**/main/kotlin/**/*.kt") // ricorda di mettere *.estensione altrimenti non becca i file
+    }
 }
