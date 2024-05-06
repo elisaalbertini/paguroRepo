@@ -1,4 +1,4 @@
 Ciao!
 
-[Javadoc](PaguroElefante/javadoc/overview-tree.html)
-[typedoc](PaguroElefante/javadoc/overview-tree.html)
+[Javadoc](javadoc/PaguroElefante/javadoc/overview-tree.html)
+[typedoc](typedoc/index.html)
