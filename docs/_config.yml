@@ -4,7 +4,7 @@ color_scheme: "light"
 
 show_downloads: false
 exclude: 
-  - ./javadoc/PaguroElefante/
+  - javadoc/PaguroElefante/
 
 mermaid:
   theme: "default"
