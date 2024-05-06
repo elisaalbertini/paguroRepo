@@ -1,4 +1,4 @@
 Ciao!  
 
-[Javadoc](dokka/index.html)  
+[dokka](dokka/index.html)  
 [typedoc](typedoc/index.html)
