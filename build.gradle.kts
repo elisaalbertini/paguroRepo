@@ -1,5 +1,6 @@
 plugins {
-    id("java")
+    kotlin("jvm") version "1.8.21"
+    id("org.jetbrains.dokka") version "1.9.20"
 }
 
 version = "1.0-SNAPSHOT"
@@ -15,4 +16,8 @@ dependencies {
 
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
+}
+
+subprojects {
+    apply(plugin = "org.jetbrains.dokka")
 }

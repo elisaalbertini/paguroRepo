@@ -12,3 +12,4 @@ gitHooks {
     }
     createHooks(true)
 }
+include("paguroKotlin")
