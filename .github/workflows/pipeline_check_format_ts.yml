@@ -15,5 +15,5 @@ jobs:
        # working-directory: paguro_web
         #run: npm install #??
       - name: Format
-        #working-directory: paguro_web
+        working-directory: paguro_web
         run: npx tsfmt --verify
