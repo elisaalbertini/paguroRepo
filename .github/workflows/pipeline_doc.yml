@@ -1,7 +1,8 @@
 name: Deploy Javadoc
 
 on:
-  push:
+  #push:
+  workflow_call:
     branches:
       - main
       - deploy

@@ -2,7 +2,8 @@
 name: Sonarcloud workflow
 
 on:
-  push:
+  #push:
+  workflow_call:
     branches:
      - main
      - develop
