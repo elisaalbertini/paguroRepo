@@ -12,6 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Format
+        working-directory: paguro_web
         run: |
           npm install
           tsfmt --verify

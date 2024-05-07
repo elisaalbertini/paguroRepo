@@ -4,4 +4,4 @@
   }
 
 //tsfmt -r --> corregge i file non formattati e li sostituisce
-//tsfmt -verify --> controlla che i file siano formattati
+//tsfmt --verify --> controlla che i file siano formattati
