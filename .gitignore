@@ -135,3 +135,7 @@ dist
 #Gradle
 .gradle
 build/
+
+#VSC
+bin/
+yarn.lock

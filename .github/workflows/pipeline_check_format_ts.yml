@@ -1,0 +1,17 @@
+name: Ts format check workflow
+
+on:
+  workflow_call:
+jobs:
+  formatCheck:
+    strategy:
+      matrix:
+        os: [ ubuntu-latest ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Format
+        run: |
+          npm install
+          tsfmt --verify
