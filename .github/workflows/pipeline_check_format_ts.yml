@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      #- name: Install
+      - name: Install
        # working-directory: paguro_web
-        #run: npm install #??
+        run: npm install #??
       - name: Format
-        working-directory: paguro_web
+      #  working-directory: paguro_web
         run: npx tsfmt --verify
