@@ -11,10 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name:
-        run: |
-            chmod +x gradlew
-            ./gradlew build
       - name: Install and check
         working-directory: paguro_web
         run: |
