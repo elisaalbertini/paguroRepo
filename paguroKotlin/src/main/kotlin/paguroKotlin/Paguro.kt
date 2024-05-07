@@ -10,6 +10,6 @@ class Paguro {
      */
     fun salutaIlPaguro(): String {
         //ciao
-        return "Ciao Paguro!"//ciaooo
+        return "Ciao Paguro!" //ciaooo
     }
 }
