@@ -9,6 +9,10 @@ jobs:
         os: [ ubuntu-latest ]
     runs-on: ${{ matrix.os }}
     steps:
+      - name: prova
+        run: |
+          git config --system core.autocrlf false
+          git config --system core.eol lf
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install
