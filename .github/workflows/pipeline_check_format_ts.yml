@@ -18,7 +18,6 @@ jobs:
         working-directory: paguro_web
         run: |
           npm install 
-          npx tsfmt -r
           npx tsfmt --verify
 
 # tsfmt -r --> corregge i file non formattati e li sostituisce
