@@ -122,6 +122,9 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# yarn v1
+yarn.lock
+
 # yarn v2
 .yarn/cache
 .yarn/unplugged
@@ -138,6 +141,3 @@ build/
 
 #VSC
 bin/
-
-
-yarn.lock
