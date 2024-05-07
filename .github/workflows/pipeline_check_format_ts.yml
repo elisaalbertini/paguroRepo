@@ -3,7 +3,9 @@ name: Ts format check workflow
 on:
   workflow_call:
 permissions:
-  push: write
+  contents:
+    - read
+    - write
 jobs:
   formatCheck:
     strategy:
