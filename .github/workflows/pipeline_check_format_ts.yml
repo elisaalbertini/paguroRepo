@@ -11,9 +11,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install
-        #working-directory: paguro_web
-        run: npm install #??
-      - name: Format
+      - name: Install and check
         working-directory: paguro_web
-        run: npx tsfmt --verify
+        run: |
+          npm install 
+          npx tsfmt --verify
+
+# tsfmt -r --> corregge i file non formattati e li sostituisce
+# tsfmt --verify --> controlla che i file siano formattati
