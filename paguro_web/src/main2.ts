@@ -1,2 +1,3 @@
-const helmet = require('helmet');
-const app = helmet();
+function salutaIlPaguro() : string {
+    return "Ciao paguro!";
+}
