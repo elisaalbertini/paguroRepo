@@ -7,6 +7,16 @@ on:
       - main
       - develop
 jobs:
+  #ktlint
+  ktlintFormat:
+    name: format kotlin
+    uses: ./.github/workflows/pipeline_ktlint_format.yml
+
+  ktlintCheck:
+    name: check format kotlin
+    uses: ./.github/workflows/pipeline_ktlint_format.yml
+
+
   jacoco:
       name: test and coverage
       uses: ./.github/workflows/pipeline_jacoco.yml

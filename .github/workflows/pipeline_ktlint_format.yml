@@ -1,0 +1,17 @@
+name: Ktlint format workflow
+
+on:
+  workflow_call:
+jobs:
+  ktlintFormat:
+    strategy:
+      matrix:
+        os: [ ubuntu-latest ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Format
+      - uses: |
+          chmod +x gradlew
+          ./gradlew ktlintFormat
