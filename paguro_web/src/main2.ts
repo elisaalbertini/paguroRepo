@@ -6,7 +6,7 @@ export function salutaIlPaguro(): string {
 }
 
 export function salutaIlPaguroPersonalizzato(personalizzazione: string): string {
-    return "Ciao " + personalizzazione + " paguro!";
+    return "Ciao "+personalizzazione+" paguro!";
 }
 
 export function complimentaIlPaguro(): string {
