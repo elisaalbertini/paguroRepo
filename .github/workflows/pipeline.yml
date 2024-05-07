@@ -7,19 +7,19 @@ on:
       - main
       - develop
 jobs:
-  #ktlint
   ktlintFormat:
     name: format kotlin
     uses: ./.github/workflows/pipeline_ktlint_format.yml
 
   ktlintCheck:
+    needs: ktlintFormat
     name: check format kotlin
-    uses: ./.github/workflows/pipeline_ktlint_format.yml
-
+    uses: ./.github/workflows/pipeline_ktlint_check.yml
 
   jacoco:
-      name: test and coverage
-      uses: ./.github/workflows/pipeline_jacoco.yml
+    needs: ktlintCheck
+    name: test and coverage
+    uses: ./.github/workflows/pipeline_jacoco.yml
 
   release:
     needs: jacoco
