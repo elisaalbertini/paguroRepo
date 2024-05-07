@@ -10,8 +10,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: Format
-      - uses: |
+        uses: |
           chmod +x gradlew
           ./gradlew ktlintCheck
