@@ -1,7 +1,4 @@
 {
-  "compilerOptions": {
-    "newLine": "crlf"
-  },
   "include": ["src/**/*"],
   "exclude": ["**/*.spec.ts"]
 }
