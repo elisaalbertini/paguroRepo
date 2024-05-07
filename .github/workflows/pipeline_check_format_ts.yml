@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install
-       # working-directory: paguro_web
+        working-directory: paguro_web
         run: npm install #??
       - name: Format
       #  working-directory: paguro_web
