@@ -1,0 +1,7 @@
+{
+    "include": ["src/**/*"],
+    "exclude": ["**/*.spec.ts"]
+  }
+
+//tsfmt -r --> corregge i file non formattati e li sostituisce
+//tsfmt -verify --> controlla che i file siano formattati
