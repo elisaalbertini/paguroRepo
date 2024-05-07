@@ -1,3 +1,3 @@
 function salutaIlPaguro() : string {
-    return "Ciao paguro!";
+	return "Ciao paguro!";
 }
