@@ -2,9 +2,6 @@ name: Ts format check workflow
 
 on:
   workflow_call:
-permissions:
-  contents: read
-    #- write
 jobs:
   formatCheck:
     strategy:
@@ -18,7 +15,6 @@ jobs:
         working-directory: paguro_web
         run: |
           npm install 
-          npx tsfmt --verbose
           npx tsfmt --verify
 
 # tsfmt -r --> corregge i file non formattati e li sostituisce
