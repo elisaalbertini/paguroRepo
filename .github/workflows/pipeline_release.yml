@@ -35,9 +35,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Update
-        env:
+      - uses: Klemensas/action-autotag@stable
+        with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: paguro_web
-        run: |
-          npm version ${{ steps.ver.outputs.nextVer }}
-          npm publish
+          version: ${{ steps.previous_step.outputs.version }}
