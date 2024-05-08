@@ -23,21 +23,10 @@ jobs:
           npm install
           npx semantic-release
         id: ver
-      - run: |
-          echo ${{ name.id }}
-    outputs:
-      newVersion: ${{ steps.ver.outputs.nextVer }}
-  updateNodeProjectVersion:
-    needs: release
-    strategy:
-      matrix:
-        os: [ ubuntu-latest ]
-    runs-on: ${{ matrix.os }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
       - name: Update
-        uses: Klemensas/action-autotag@stable
+      - uses: Klemensas/action-autotag@stable
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: ${{ steps.previous_step.outputs.version }}
+    outputs:
+      newVersion: ${{ steps.ver.outputs.nextVer }}
