@@ -1,7 +1,8 @@
 name: Main project workflow
 
 on:
-  push:
+  #push:
+  worckflow_call:
     branches:
       - main
       - develop
