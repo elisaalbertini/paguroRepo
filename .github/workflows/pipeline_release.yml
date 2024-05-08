@@ -24,7 +24,7 @@ jobs:
           npx semantic-release
         id: ver
       - name: Update
-      - uses: Klemensas/action-autotag@stable
+        uses: Klemensas/action-autotag@stable
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: ${{ steps.previous_step.outputs.version }}
