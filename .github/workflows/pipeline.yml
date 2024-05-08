@@ -23,6 +23,6 @@ jobs:
     #uses: ./.github/workflows/pipeline_jacoco.yml
 
   release:
-    needs: jacoco
+    #needs: jacoco
     name: Release workflow
     uses: ./.github/workflows/pipeline_release.yml
