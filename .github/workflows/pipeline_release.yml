@@ -2,6 +2,8 @@ name: Release workflow
 
 on:
   workflow_call:
+permissions:
+  contents: write
 jobs:
   release:
     strategy:
