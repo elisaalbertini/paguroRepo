@@ -2,8 +2,6 @@ name: Release workflow
 
 on:
   workflow_call:
-permissions:
-  contents: write
 jobs:
   release:
     strategy:
@@ -23,11 +21,5 @@ jobs:
           npm install
           npx semantic-release
         id: ver
-      - name: Update
-        uses: Klemensas/action-autotag@stable
-        with:
-          working-directory: paguro_web
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          version: ${{ steps.previous_step.outputs.version }}
     outputs:
       newVersion: ${{ steps.ver.outputs.nextVer }}
