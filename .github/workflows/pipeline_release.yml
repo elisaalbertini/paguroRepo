@@ -32,8 +32,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      #- name: Update
-       # working-directory: paguro_web
-       # run: |
-        #  npm version ${{ steps.ver.outputs.nextVer }}
-         # npm publish
+      - name: Update
+        working-directory: paguro_web
+        run: |
+          npm version ${{ steps.ver.outputs.nextVer }}
+          npm publish
