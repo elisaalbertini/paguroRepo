@@ -24,7 +24,7 @@ jobs:
           npx semantic-release
         id: ver
       - run: |
-          echo ${{ ver }}
+          echo ${{ steps.ver }}
     outputs:
       newVersion: ${{ steps.ver.outputs.nextVer }}
   updateNodeProjectVersion:
