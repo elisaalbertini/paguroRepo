@@ -25,6 +25,10 @@ jobs:
       newVersion: ${{ steps.ver.outputs.nextVer }}
   updateNodeProjectVersion:
     needs: release
+    strategy:
+      matrix:
+        os: [ ubuntu-latest ]
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
