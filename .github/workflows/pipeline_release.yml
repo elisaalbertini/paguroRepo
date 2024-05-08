@@ -24,7 +24,10 @@ jobs:
     outputs:
       newVersion: ${{ steps.ver.outputs.nextVer }}
   updateNodeProjectVersion:
+    needs: release
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Update
         working-directory: paguro_web
         run: |
