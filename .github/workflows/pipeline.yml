@@ -2,7 +2,7 @@ name: Main project workflow
 
 on:
   #push:
-  worckflow_call:
+  workflow_call:
     branches:
       - main
       - develop
