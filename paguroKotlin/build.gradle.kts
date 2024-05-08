@@ -1,6 +1,7 @@
 plugins {
-    kotlin("jvm") version "1.8.21"
-    id("org.jetbrains.dokka") version "1.9.20"
+    alias(libs.plugins.dokka)
+    alias(libs.plugins.ktlint)
+    alias(libs.plugins.kotlin)
     id("jacoco")
 }
 
@@ -13,9 +14,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
-    implementation(kotlin("stdlib-jdk8"))
+    testImplementation(kotlin("test"))
+    testImplementation(libs.junit5)
+    testRuntimeOnly(libs.junit5.runtime)
+    // implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks.test {
