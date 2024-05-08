@@ -23,10 +23,10 @@ jobs:
           npm install
           npx semantic-release
         id: ver
+      - run: |
+          echo ${{ steps.ver.outputs.nextVer }}
     outputs:
       newVersion: ${{ steps.ver.outputs.nextVer }}
-      run: |
-        echo ${{ steps.ver.outputs.nextVer }}
   updateNodeProjectVersion:
     needs: release
     strategy:
