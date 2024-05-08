@@ -25,6 +25,8 @@ jobs:
         id: ver
     outputs:
       newVersion: ${{ steps.ver.outputs.nextVer }}
+      run: |
+        echo ${{ steps.ver.outputs.nextVer }}
   updateNodeProjectVersion:
     needs: release
     strategy:
@@ -34,8 +36,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - run: | 
-          echo Paguri!
       - name: Update
         uses: Klemensas/action-autotag@stable
         with:
