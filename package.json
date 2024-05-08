@@ -1,6 +1,5 @@
 {
   "name": "paguro",
-  "version": "1.0.0",
   "description": "Progetto di prova",
   "main": "index.js",
   "dependencies": {
