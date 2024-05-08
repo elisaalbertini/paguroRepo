@@ -24,6 +24,7 @@ jobs:
           npx semantic-release
         id: ver
       - name: Update
+        working-directory: paguro_web
         uses: Klemensas/action-autotag@stable
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
