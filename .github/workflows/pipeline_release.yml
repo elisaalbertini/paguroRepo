@@ -33,6 +33,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         working-directory: paguro_web
         run: |
           npm version ${{ steps.ver.outputs.nextVer }}

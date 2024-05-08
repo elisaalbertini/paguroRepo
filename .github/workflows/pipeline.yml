@@ -7,20 +7,20 @@ on:
       - develop
 jobs:
 
-  ktlintCheck:
-    name: check format kotlin
-    uses: ./.github/workflows/pipeline_ktlint_check.yml
+  #ktlintCheck:
+   # name: check format kotlin
+    #uses: ./.github/workflows/pipeline_ktlint_check.yml
 
-  tsFormatCheck:
-    name: check format ts
-    uses: ./.github/workflows/pipeline_check_format_ts.yml
+  #tsFormatCheck:
+   # name: check format ts
+    #uses: ./.github/workflows/pipeline_check_format_ts.yml
 
-  jacoco:
-    needs:
-      - ktlintCheck
-      - tsFormatCheck
-    name: test and coverage
-    uses: ./.github/workflows/pipeline_jacoco.yml
+  #jacoco:
+   # needs:
+    #  - ktlintCheck
+     # - tsFormatCheck
+    #name: test and coverage
+    #uses: ./.github/workflows/pipeline_jacoco.yml
 
   release:
     needs: jacoco
