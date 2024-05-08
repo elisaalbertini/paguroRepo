@@ -23,10 +23,10 @@ jobs:
         id: ver
     outputs:
       newVersion: ${{ steps.ver.outputs.nextVer }}
-    updateNodeProjectVersion:
-      steps:
-        - name: Update
-          working-directory: paguro_web
-          run: |
-            npm version ${{ steps.ver.outputs.nextVer }}
-            npm publish
+  updateNodeProjectVersion:
+    steps:
+      - name: Update
+        working-directory: paguro_web
+        run: |
+          npm version ${{ steps.ver.outputs.nextVer }}
+          npm publish
