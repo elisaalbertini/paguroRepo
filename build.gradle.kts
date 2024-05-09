@@ -18,7 +18,7 @@ sonar.properties {
     property("systemProp.sonar.coverage.jacoco.xmlReportPaths")
     property("systemProp.sonar.javascript.lcov.reportPaths")
     property("systemProp.sonar.exclusion")
-    property("sonar.token", "4a3d8ea01b02dbef8115c170a3c30871f67f64c3") //!!!
+    //property("sonar.token", "4a3d8ea01b02dbef8115c170a3c30871f67f64c3") //!!!
 }
 
 dependencies {

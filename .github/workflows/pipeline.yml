@@ -7,6 +7,8 @@ on:
       - develop
 jobs:
 
+  #dovrebbe lanciare solo i test non anche la coverage
+
   ktlintCheck:
     name: check format kotlin
     uses: ./.github/workflows/pipeline_ktlint_check.yml
@@ -18,9 +20,15 @@ jobs:
   jacoco:
     needs:
       - ktlintCheck
-      - tsFormatCheck
-    name: test and coverage
+    name: test and coverage kotlin
     uses: ./.github/workflows/pipeline_jacoco.yml
+
+  jest:
+    needs:
+      - tsFormatCheck
+    name: test and coverage typescript
+    uses: ./.github/workflows/pipeline_test_jest.yml
+
 
   release:
     needs: jacoco

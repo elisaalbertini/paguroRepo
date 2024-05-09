@@ -2,8 +2,7 @@
 name: Sonarcloud workflow
 
 on:
-  #push:
-  workflow_call:
+  push:
     branches:
      - main
      - develop
@@ -21,38 +20,27 @@ jobs:
     name: SonarCloud
     strategy:
       matrix:
-        #java-version: [ 11, 16, 17, 18 ]
+
         os: [ ubuntu-latest ]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      #- name: Set up JDK
-       # uses: actions/setup-java@v4
-        #with:
-         # java-version: ${{ matrix.java-version }}
-          #distribution: 'temurin'
+      - name: Gradle (build and coverage)
+        run: |
+          chmod +x gradlew
+          ./gradlew build
+          ./gradlew jacocoTestReport
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-      - run: ./gradlew build
-
-      - name: Run Test Coverage
-        run: ./gradlew jacocoTestReport #sonar
-
-      - name: Install modules
+      - name: npm (build and coverage)
         working-directory: paguro_web
-        run: npm install
-      - name: Run tests
-        working-directory: paguro_web
-        run: yarn test
-      - name: Coverage
-        working-directory: paguro_web
-        run: npx jest --coverage
+        run: |
+          npm install
+          npx jest --coverage
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+      - name: SonarQube Scan
+        run:
+          chmod +x gradlew
+          ./gradlew build sonar
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
        # with:
