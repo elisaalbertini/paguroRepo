@@ -40,6 +40,7 @@ jobs:
       - name: SonarQube Scan
         run:
           chmod +x gradlew
+          chmod +x sonar
           ./gradlew build sonar
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

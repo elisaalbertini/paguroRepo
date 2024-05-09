@@ -1,8 +1,5 @@
 on:
   workflow_call:
-    branches:
-      - main
-      - develop
 jobs:
   build:
     strategy:
@@ -11,12 +8,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4 
-    - name: Install modules
+    - name: Run test and coverage
       working-directory: paguro_web
-      run: npm install
-    - name: Run tests
-      working-directory: paguro_web
-      run: yarn test
-    - name: Coverage
-      working-directory: paguro_web
-      run: npx jest --coverage
+      run: |
+        npm install
+        yarn test
+        npx jest --coverage
