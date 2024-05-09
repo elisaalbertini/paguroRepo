@@ -3,6 +3,7 @@ dokka = "1.9.20"
 kotlin = "1.8.22"
 ktlint = "12.1.0"
 junit = "5.8.1"
+sonarqube = "5.0.0.4638"
 
 [libraries]
 junit5 = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
@@ -13,4 +14,4 @@ junit5-runtime = { module = "org.junit.jupiter:junit-jupiter-engine", version.re
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
-
+sonarqube = {id = "org.sonarqube", version.ref = "sonarqube"}

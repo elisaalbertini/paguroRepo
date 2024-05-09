@@ -2,10 +2,23 @@ plugins {
     alias(libs.plugins.dokka)
     alias(libs.plugins.ktlint)
     alias(libs.plugins.kotlin)
+    alias(libs.plugins.sonarqube)
 }
 
 repositories {
     mavenCentral()
+}
+
+sonar.properties {
+    property("systemProp.sonar.host.url")
+    property("systemProp.sonar.projectKey")
+    property("systemProp.sonar.organization")
+    property("systemProp.sonar.sources")
+    property("systemProp.sonar.coverage.exclusions")
+    property("systemProp.sonar.coverage.jacoco.xmlReportPaths")
+    property("systemProp.sonar.javascript.lcov.reportPaths")
+    property("systemProp.sonar.exclusion")
+    property("sonar.token", "4a3d8ea01b02dbef8115c170a3c30871f67f64c3") //!!!
 }
 
 dependencies {
@@ -26,5 +39,6 @@ tasks.getByName<Test>("test") {
 ktlint {
     filter {
         include("**/main/kotlin/**/*.kt") // ricorda di mettere *.estensione altrimenti non becca i file
+        exclude("**/*.gradle.kts")
     }
 }

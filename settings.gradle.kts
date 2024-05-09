@@ -1,6 +1,6 @@
 rootProject.name = "paguroRepo"
 
-include(":PaguroElefante")
+include("PaguroElefante")
 include("paguroKotlin")
 
 plugins {
