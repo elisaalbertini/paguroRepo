@@ -14,16 +14,18 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
-    testImplementation(libs.junit5)
-    testRuntimeOnly(libs.junit5.runtime)
-    // implementation(kotlin("stdlib-jdk8"))
+// testImplementation(kotlin("test"))
+// testImplementation(libs.junit5)
+// testRuntimeOnly(libs.junit5.runtime)
+// implementation(kotlin("stdlib-jdk8"))
+    testImplementation(libs.bundles.kotlin.testing)
 }
 
 tasks.test {
     useJUnitPlatform()
     finalizedBy(tasks.jacocoTestReport)
 }
+
 tasks.jacocoTestReport {
     dependsOn(tasks.test)
     reports {
