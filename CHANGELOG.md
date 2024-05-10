@@ -1,3 +1,20 @@
+## [1.8.0](https://github.com/elisaalbertini/paguroRepo/compare/1.7.1...1.8.0) (2024-05-10)
+
+
+### Features
+
+* add cucumber ([f381c5b](https://github.com/elisaalbertini/paguroRepo/commit/f381c5b0ddbe8245d4003ef53e7c6dd15c1d02ac))
+
+
+### Refactoring
+
+* ciao ([2df9fcd](https://github.com/elisaalbertini/paguroRepo/commit/2df9fcd2d88af5e0f0f5c726f3c5bb5ebce5347d))
+* ciao ([f14b9e7](https://github.com/elisaalbertini/paguroRepo/commit/f14b9e7072cdae822c8e0e5f4b3c410bf61531f3))
+* fix 1 ([73b5f5f](https://github.com/elisaalbertini/paguroRepo/commit/73b5f5f7564616f26245fca45231fe02dad61462))
+* kotest ([12cbdab](https://github.com/elisaalbertini/paguroRepo/commit/12cbdabf8de68853b9fe8cd4ce0950080a388c53))
+* sonarqube in workflow ([3aa0bdd](https://github.com/elisaalbertini/paguroRepo/commit/3aa0bddcb738b6fc52fd1e0f1b8f209167ec91d6))
+* sonarqube in workflow ([0dc820c](https://github.com/elisaalbertini/paguroRepo/commit/0dc820cd87701e91b0ee7b69a29856ed2e456569))
+
 ## [1.7.1](https://github.com/elisaalbertini/paguroRepo/compare/1.7.0...1.7.1) (2024-05-09)
 
 
