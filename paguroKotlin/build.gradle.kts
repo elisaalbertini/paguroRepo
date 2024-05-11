@@ -6,7 +6,7 @@ plugins {
 }
 
 jacoco {
-    toolVersion = "0.8.11"
+    toolVersion = libs.versions.jacoco.get()
 }
 
 repositories {
@@ -14,14 +14,9 @@ repositories {
 }
 
 dependencies {
-// testImplementation(kotlin("test"))
-// testImplementation(libs.junit5)
-// testRuntimeOnly(libs.junit5.runtime)
-// implementation(kotlin("stdlib-jdk8"))
     testImplementation(libs.bundles.kotlin.testing)
-    testImplementation("io.cucumber:cucumber-java:7.17.0")
-    testImplementation("io.cucumber:cucumber-junit:7.17.0")
-    testImplementation("org.junit.vintage:junit-vintage-engine")
+    testImplementation(libs.bundles.cucumber.testing)
+    testImplementation(libs.junit.vintage)
 }
 
 tasks.test {
