@@ -1,11 +1,11 @@
-package paguroKotlin.features.step_definition
+package paguroKotlin.features.stepDefinition
 import io.cucumber.java.en.Given
 import io.cucumber.java.en.Then
 import io.cucumber.java.en.When
 import org.junit.jupiter.api.Assertions.assertEquals
 import paguroKotlin.Paguro
 
-class MyStepdefs {
+class StepDefinition {
     private var paguro: Paguro = Paguro()
     private var actualAnswer: String = "Nope"
     private var isPaguroHungry: Boolean = false
@@ -30,4 +30,3 @@ class MyStepdefs {
         assertEquals(this.actualAnswer, expectedAnswer)
     }
 }
-

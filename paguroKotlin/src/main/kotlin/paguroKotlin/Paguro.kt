@@ -11,10 +11,11 @@ class Paguro {
     fun salutaIlPaguro(): String {
         return "Ciao Paguro!"
     }
-    fun isKappaHungry(isHungry: Boolean): String{
-        return if(isHungry){
+
+    fun isKappaHungry(isHungry: Boolean): String {
+        return if (isHungry) {
             "Yess"
-        }else{
+        } else {
             "Nope"
         }
     }

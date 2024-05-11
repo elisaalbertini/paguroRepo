@@ -6,5 +6,6 @@ import org.junit.runner.RunWith
 
 @RunWith(Cucumber::class)
 @CucumberOptions(
-    features = ["src/test/kotlin/paguroKotlin/features"])
+    features = ["src/test/kotlin/paguroKotlin/features"],
+)
 class RunCucumberTest
