@@ -7,7 +7,7 @@ class PaguroTestKotest : DescribeSpec({
 
     var paguro = Paguro()
 
-    describe("ciao") {
+    describe("paguroKotlin/features") {
         it("ciaooo") {
             paguro.salutaIlPaguro() shouldBe "Ciao Paguro!"
         }

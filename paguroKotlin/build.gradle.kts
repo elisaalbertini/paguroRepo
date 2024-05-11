@@ -19,6 +19,9 @@ dependencies {
 // testRuntimeOnly(libs.junit5.runtime)
 // implementation(kotlin("stdlib-jdk8"))
     testImplementation(libs.bundles.kotlin.testing)
+    testImplementation("io.cucumber:cucumber-java:7.17.0")
+    testImplementation("io.cucumber:cucumber-junit:7.17.0")
+    testImplementation("org.junit.vintage:junit-vintage-engine")
 }
 
 tasks.test {
