@@ -18,8 +18,8 @@ jobs:
    # uses: ./.github/workflows/pipeline_check_format_ts.yml
 
   jacoco:
-    needs:
-      - ktlintCheck
+    #needs:
+     # - ktlintCheck
     name: test and coverage kotlin
     uses: ./.github/workflows/pipeline_jacoco.yml
 
