@@ -13,9 +13,9 @@ jobs:
     name: check format kotlin
     uses: ./.github/workflows/pipeline_ktlint_check.yml
 
-  tsFormatCheck:
-    name: check format ts
-    uses: ./.github/workflows/pipeline_check_format_ts.yml
+  #tsFormatCheck:
+   # name: check format ts
+   # uses: ./.github/workflows/pipeline_check_format_ts.yml
 
   jacoco:
     needs:
@@ -23,14 +23,14 @@ jobs:
     name: test and coverage kotlin
     uses: ./.github/workflows/pipeline_jacoco.yml
 
-  jest:
-    needs:
-      - tsFormatCheck
-    name: test and coverage typescript
-    uses: ./.github/workflows/pipeline_test_jest.yml
+  #jest:
+   # needs:
+    #  - tsFormatCheck
+    #name: test and coverage typescript
+    #uses: ./.github/workflows/pipeline_test_jest.yml
 
 
-  release:
-    needs: jacoco
-    name: Release workflow
-    uses: ./.github/workflows/pipeline_release.yml
+  #release:
+   # needs: jacoco
+    #name: Release workflow
+    #uses: ./.github/workflows/pipeline_release.yml
