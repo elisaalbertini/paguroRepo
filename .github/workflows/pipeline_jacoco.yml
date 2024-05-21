@@ -9,8 +9,8 @@ jobs:
   jacoco-java-gradle:
     strategy:
       matrix:
-        java-version: [ 18 ]
-        os: [ ubuntu-latest, windows-latest ]
+        java-version: [ 11, 16, 17, 18 ]
+        os: [ windows-latest ]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
