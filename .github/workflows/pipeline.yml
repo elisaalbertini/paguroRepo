@@ -9,17 +9,17 @@ jobs:
 
   #dovrebbe lanciare solo i test non anche la coverage
 
-  #ktlintCheck:
-   # name: check format kotlin
-    #uses: ./.github/workflows/pipeline_ktlint_check.yml
+  ktlintCheck:
+    name: check format kotlin
+    uses: ./.github/workflows/pipeline_ktlint_check.yml
 
   #tsFormatCheck:
    # name: check format ts
    # uses: ./.github/workflows/pipeline_check_format_ts.yml
 
   jacoco:
-    #needs:
-     # - ktlintCheck
+    needs:
+      - ktlintCheck
     name: test and coverage kotlin
     uses: ./.github/workflows/pipeline_jacoco.yml
 

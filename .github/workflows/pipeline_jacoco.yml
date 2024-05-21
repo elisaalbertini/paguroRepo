@@ -9,7 +9,7 @@ jobs:
   jacoco-java-gradle:
     strategy:
       matrix:
-        java-version: [ 11, 16, 17, 18 ]
+        java-version: [ 18 ]
         os: [ windows-latest ]
     runs-on: ${{ matrix.os }}
     steps:
