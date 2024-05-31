@@ -1,3 +1,35 @@
+## [1.9.0](https://github.com/elisaalbertini/paguroRepo/compare/1.8.0...1.9.0) (2024-05-31)
+
+
+### Features
+
+* Update prova_commit.txt ([52997a6](https://github.com/elisaalbertini/paguroRepo/commit/52997a67704f02076a828c9726b77d7a522e7a45))
+
+
+### General maintenance
+
+* Merge branch 'main' of https://github.com/elisaalbertini/paguroRepo ([0dee043](https://github.com/elisaalbertini/paguroRepo/commit/0dee043d5589fa90912afc0be156a1349731e13d))
+* prova firma ([ecce504](https://github.com/elisaalbertini/paguroRepo/commit/ecce5041ebcf2910e4d5375c0720d2857bc2c29f))
+* prova firma ([43c09b3](https://github.com/elisaalbertini/paguroRepo/commit/43c09b3a5e6b57758fb69df61a5aea034169027d))
+* prova windows ([aafaf6e](https://github.com/elisaalbertini/paguroRepo/commit/aafaf6ee187ec5feeb8d13c15f2ff01021a76926))
+* prova windows 2 ([039caa9](https://github.com/elisaalbertini/paguroRepo/commit/039caa91ccbad2c0d9c7261f2e696e8ae992d1ae))
+* prova windows 3 ([07c898f](https://github.com/elisaalbertini/paguroRepo/commit/07c898fa5bef61d252bb9c9200dcf286d33d3468))
+* prova windows 4 ([eaa52c0](https://github.com/elisaalbertini/paguroRepo/commit/eaa52c09f88af3bd7f5a0015cc5625426ac7d590))
+* prova windows 5 ([684f4d8](https://github.com/elisaalbertini/paguroRepo/commit/684f4d890d0283210bba28f87f4b3e3fd3a2440e))
+* prova windows 6 ([9c69fb7](https://github.com/elisaalbertini/paguroRepo/commit/9c69fb78717ae5fb2b139e5833e49ad3dff1b2b9))
+* prova windows 7 ([23d82fa](https://github.com/elisaalbertini/paguroRepo/commit/23d82fabcbd8b162bf26514cdc4c5125ab3f2dda))
+
+
+### Refactoring
+
+* ciao ([ec82c7f](https://github.com/elisaalbertini/paguroRepo/commit/ec82c7f5f37c3a6ba983b29eeb026913c5cf3a43))
+* ciao ([1c5186f](https://github.com/elisaalbertini/paguroRepo/commit/1c5186f52394b7554f8beda322efd89b7ffa1fc8))
+* ciao ([e9e7f34](https://github.com/elisaalbertini/paguroRepo/commit/e9e7f34a615fa17a95b622dcaa6221a6bb94e58a))
+* ciao ([9ad1855](https://github.com/elisaalbertini/paguroRepo/commit/9ad185571e74b8ed0cdd6e33d221fedc3011d2fc))
+* ciao ([cb0272b](https://github.com/elisaalbertini/paguroRepo/commit/cb0272b4e09a4bf82da1103ee7cfca96cad0e6ec))
+* ciao ([3b62a10](https://github.com/elisaalbertini/paguroRepo/commit/3b62a10173ecbc71473269b8a8fbc8e81dd9554f))
+* removed cucumber ([c38b895](https://github.com/elisaalbertini/paguroRepo/commit/c38b895449183f526355aa471e71edb670f22f60))
+
 ## [1.8.0](https://github.com/elisaalbertini/paguroRepo/compare/1.7.1...1.8.0) (2024-05-10)
 
 
