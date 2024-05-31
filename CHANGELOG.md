@@ -1,3 +1,10 @@
+## [1.10.0](https://github.com/elisaalbertini/paguroRepo/compare/1.9.0...1.10.0) (2024-05-31)
+
+
+### Features
+
+* Clarabella ([7ef2431](https://github.com/elisaalbertini/paguroRepo/commit/7ef2431a2c6037f468b3bdb995ed17c4cf92f5dd))
+
 ## [1.9.0](https://github.com/elisaalbertini/paguroRepo/compare/1.8.0...1.9.0) (2024-05-31)
 
 
