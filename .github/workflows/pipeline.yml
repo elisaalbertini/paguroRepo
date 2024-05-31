@@ -30,7 +30,7 @@ jobs:
     #uses: ./.github/workflows/pipeline_test_jest.yml
 
 
-  #release:
-   # needs: jacoco
-    #name: Release workflow
-    #uses: ./.github/workflows/pipeline_release.yml
+  release:
+    #needs: jacoco
+    name: Release workflow
+    uses: ./.github/workflows/pipeline_release.yml
